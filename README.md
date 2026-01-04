@@ -312,8 +312,8 @@ Este proyecto está bajo licencia MIT - ver archivo `LICENSE` para detalles.
 
 **Facundo Aguinaga**
 - GitHub: [@FacundoAguinaga](https://github.com/FacundoAguinaga)
-- LinkedIn: [Tu LinkedIn]
-- Email: [tu-email@example.com]
+- LinkedIn: [https://www.linkedin.com/in/facundo-aguinaga-707b01356/]
+- Email: [aguinagafacuno8@gmail.com]
 
 ## 🙏 Agradecimientos
 
