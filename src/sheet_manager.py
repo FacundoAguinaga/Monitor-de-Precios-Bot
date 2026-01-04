@@ -2,7 +2,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 from datetime import datetime
-import logging # <--- AGREGAR ESTO
+import logging
 
 class SheetManager:
     def __init__(self, json_keyfile="service_account.json", sheet_name="Precios_Competencia"):
@@ -21,10 +21,9 @@ class SheetManager:
             self.client = gspread.authorize(creds)
             self.sheet = self.client.open(self.sheet_name).sheet1
             print("✅ Conexión con Google Sheets exitosa.")
-            # Logging conexión es opcional, pero útil si falla a menudo
         except Exception as e:
             print(f"❌ Error conectando a Google Sheets: {e}")
-            logging.critical(f"SHEETS ERROR: No se pudo conectar a la API. {e}") # <--- LOG CRÍTICO
+            logging.critical(f"SHEETS ERROR: No se pudo conectar a la API. {e}")
 
     def save_data(self, data_list: list):
         if not self.sheet:
@@ -52,7 +51,7 @@ class SheetManager:
                 self.sheet.append_row(row)
             
             print(f"☁️ {len(rows_to_add)} filas subidas a Google Sheets.")
-            logging.info(f"CLOUD SYNC: {len(rows_to_add)} filas subidas correctamente.") # <--- LOG DE SYNC
+            logging.info(f"CLOUD SYNC: {len(rows_to_add)} filas subidas correctamente.")
             
         except Exception as e:
             print(f"❌ Error escribiendo datos: {e}")

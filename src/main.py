@@ -2,11 +2,10 @@ import asyncio
 import os
 import pandas as pd
 import csv
-import logging # <--- IMPORTANTE
+import logging
 from scraper import ProductScraper
 from sheet_manager import SheetManager
 
-# --- CONFIGURACIÓN DE LOGS (Nivel Profesional) ---
 logging.basicConfig(
     filename='bot_activity.log',
     level=logging.INFO,

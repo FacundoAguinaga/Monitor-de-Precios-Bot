@@ -45,7 +45,7 @@ class ProductDiscoverer:
                     product_url = None
                     for link in links_in_card:
                         href = await link.get_attribute("href")
-                        # Filtro mejorado: evitar publicidad (click1) y asegurar que sea producto
+                        #evitar publicidad (click1) y asegurar que sea producto
                         if href and ("/p/" in href or "articulo.mercadolibre" in href) and "click1" not in href:
                             product_url = href
                             break 
@@ -88,12 +88,6 @@ class ProductDiscoverer:
             print(f"♻️ Modo Reemplazo: Se sobrescribirá {filename}")
 
         added_count = 0
-        
-        # 'w' borra el archivo, 'a' agrega al final. 
-        # Pero aquí controlamos la lógica nosotros, así que siempre abrimos en 'w' si es replace
-        # o manejamos la lista completa en memoria y reescribimos.
-        
-        # Estrategia más segura: Escribir todo de nuevo si es replace, o append si es append.
         
         write_mode = "a" if mode == "append" and os.path.exists(filename) else "w"
         
