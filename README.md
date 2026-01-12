@@ -1,4 +1,4 @@
-# 🚀 Market Intelligence & Price Monitor Hub
+# Market Intelligence & Price Monitor Hub
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -9,7 +9,7 @@
 
 Sistema automatizado que integra descubrimiento de competidores, scraping asíncrono de alto rendimiento y dashboards interactivos para la toma de decisiones basada en datos.
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Características](#-características-principales)
 - [Arquitectura](#-arquitectura-técnica)
@@ -20,15 +20,15 @@ Sistema automatizado que integra descubrimiento de competidores, scraping asínc
 - [Limitaciones](#-limitaciones-conocidas)
 - [Roadmap](#-roadmap)
 
-## 🌟 Características Principales
+## Características Principales
 
-### 1. 🕵️ Auto-Descubrimiento Inteligente
+### 1. Auto-Descubrimiento Inteligente
 - **Búsqueda automatizada** basada en keywords con filtrado inteligente
 - **Modo Reemplazo/Acumulativo** para gestión flexible de objetivos
 - **Detección anti-publicidad** para URLs limpias y válidas
 - Manejo robusto de layouts Grid/List de MercadoLibre
 
-### 2. 🤖 Motor ETL de Alto Rendimiento
+### 2. Motor ETL de Alto Rendimiento
 | Tecnología | Propósito |
 |------------|-----------|
 | **Playwright** | Navegación headless con JavaScript rendering |
@@ -36,13 +36,13 @@ Sistema automatizado que integra descubrimiento de competidores, scraping asínc
 | **Stealth Mode** | Rotación de User-Agents + anti-detección |
 | **Auto-Retry** | Reintentos exponenciales ante fallos de red |
 
-### 3. 📊 Dashboard Analítico Interactivo
+### 3. Dashboard Analítico Interactivo
 - **KPIs en Tiempo Real**: Precio promedio, mínimo, volatilidad
 - **Visualizaciones Plotly**: Gráficos de tendencias y comparativas
 - **CRUD Completo**: Gestión de base de datos desde UI
 - **Sistema de Logs**: Auditoría completa de operaciones
 
-## 🏗️ Arquitectura Técnica
+## Arquitectura Técnica
 
 ```mermaid
 graph TD
@@ -85,7 +85,7 @@ Monitor-de-Precios-Bot/
 └── 📄 README.md                # Esta documentación
 ```
 
-## ⚙️ Instalación
+## Instalación
 
 ### Prerequisitos
 - Python 3.11+ (recomendado 3.13)
@@ -128,7 +128,7 @@ cp .env.example .env
 # 4. Colocar en la raíz del proyecto
 ```
 
-## 🎯 Guía de Uso
+## Guía de Uso
 
 ### Inicio Rápido (3 minutos)
 
@@ -182,7 +182,7 @@ sequenceDiagram
 python src/main.py
 ```
 
-## 🔧 Configuración Avanzada
+## Configuración Avanzada
 
 ### config.yaml (Personalización)
 
@@ -210,7 +210,7 @@ SERVICE_ACCOUNT_PATH=service_account.json
 LOG_LEVEL=INFO
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Instalar dependencias de testing
@@ -262,7 +262,7 @@ def test_clean_url():
 
 **Recomendación**: Siempre revisa los `robots.txt` y TOS del sitio objetivo. Considera usar APIs oficiales cuando estén disponibles.
 
-## 🚧 Roadmap
+## Roadmap
 
 ### v2.0 (Próxima Release)
 - [x] Sistema de logging profesional
@@ -285,16 +285,16 @@ def test_clean_url():
 - [ ] Autenticación de usuarios (multi-tenant)
 - [ ] Deploy en cloud (AWS/GCP/Azure)
 
-## 📈 Métricas del Proyecto
+## Métricas del Proyecto
 
 ```text
-Líneas de Código:     ~800 (Python)
+Líneas de Código:     ~--- (Python)
 Cobertura de Tests:   [Pendiente]
 Tiempo de Scraping:   ~2s por producto
 Uptime Promedio:      N/A (uso manual)
 ```
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Este es un proyecto de portafolio personal, pero acepto sugerencias:
 
@@ -304,18 +304,18 @@ Este es un proyecto de portafolio personal, pero acepto sugerencias:
 4. Push a la branch (`git push origin feature/MejoraSugerida`)
 5. Abre un Pull Request
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto está bajo licencia MIT - ver archivo `LICENSE` para detalles.
 
-## 👤 Autor
+## Autor
 
 **Facundo Aguinaga**
 - GitHub: [@FacundoAguinaga](https://github.com/FacundoAguinaga)
 - LinkedIn: [https://www.linkedin.com/in/facundo-aguinaga-707b01356/]
 - Email: [aguinagafacuno8@gmail.com]
 
-## 🙏 Agradecimientos
+## Agradecimientos
 
 - Streamlit por el framework de dashboards
 - Playwright por la librería de automatización
@@ -323,7 +323,7 @@ Este proyecto está bajo licencia MIT - ver archivo `LICENSE` para detalles.
 
 ---
 
-**⚡ Pro Tip**: Para mejores resultados, ejecuta el scraping en horarios de bajo tráfico (madrugada) para reducir latencia y probabilidad de bloqueos.
+** Pro Tip**: Para mejores resultados, ejecuta el scraping en horarios de bajo tráfico (madrugada) para reducir latencia y probabilidad de bloqueos.
 
 **🐛 Encontraste un bug?** Abre un issue con:
 - Descripción del problema
